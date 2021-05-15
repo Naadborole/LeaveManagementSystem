@@ -75,6 +75,22 @@ function checkValidityLogin(em, pas) {
       document.getElementById("lname").classList.add("is-valid");
       document.getElementById("lname").classList.remove("is-invalid");
     }
+    if (document.getElementById("dept").value === "") {
+      this.event.preventDefault();
+      document.getElementById("dept").classList.add("is-invalid");
+      isPasswordValid = false;
+    } else {
+      document.getElementById("dept").classList.add("is-valid");
+      document.getElementById("dept").classList.remove("is-invalid");
+    }
+    if (document.getElementById("title").value === "") {
+      this.event.preventDefault();
+      document.getElementById("title").classList.add("is-invalid");
+      isPasswordValid = false;
+    } else {
+      document.getElementById("title").classList.add("is-valid");
+      document.getElementById("title").classList.remove("is-invalid");
+    }
   }
   return isEmailValid && isPasswordValid;
 }

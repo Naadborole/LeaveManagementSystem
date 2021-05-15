@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leave Management System</title>
+    <link rel="stylesheet" href="Basic.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="validation.js"></script>
+  </head>
+
+  <body>
+    <ul class="nav-ul">
+      <li class="nav-li active"><a class="nav-a" href="AdminDashboard.html">Home</a></li>
+      <li class="nav-li "><a class="nav-a" href="Members.html">Members</a></li>
+      <li class="nav-li "><a class="nav-a" href="Requests.html">Requests</a></li>
+    </ul>
+    <h1 class="title">Leave Management System</h1>
+    <div class="row main row-flex">
+        <div class="col-md">
+            <div class="card card-pad h-100" style="border-color: #e00">
+                <h3 style="color: #e00; font-weight: 800">Pending Leaves</h3>
+                <br />
+                    <div class="row w-100 h-25" style="margin-bottom: 15px">
+                        <div class="card w-100 h-100" style="border-color: #e00"">
+                        </div>
+                    </div>
+                    <div class="row w-100 h-25" style="margin-bottom: 15px">
+                        <div class="card w-100 h-100" style="border-color: #e00"">
+                        </div>
+                    </div>
+                    <div class="row w-100 h-25">
+                        <div class="card w-100 h-100" style="border-color: #e00"">
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card card-pad" style="border-color: #e00">
+              <h3 style="color: #e00; font-weight: 800">Set Rules</h3>
+              <br />
+              <form class="needs-validation">
+                <div class="mb-3 form-outline">
+                  <label for="Email1" class="form-label">Email address</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="Email1"
+                    aria-describedby="emailHelp"
+                  />
+                  <div class="valid-feedback" id="valid-for-Email1">Looks good!</div>
+                  <div class="invalid-feedback" id="invalid-for-Email1">Please choose an upcoming date.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="Subject1" class="form-label">Subject</label>
+                  <input type="text" class="form-control" id="Subject1" />
+                  <div class="valid-feedback" id="valid-for-Subject1">Looks good!</div>
+                  <div class="invalid-feedback" id="invalid-for-Subject1">Please choose an upcoming date.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="example-date-input" class="col-2 col-form-label"
+                    >Date</label
+                  >
+                  <div class="row">
+                    <div class="col-sm-5 col-md-3 col-lg-5">
+                      <input
+                        class="form-control"
+                        type="date"
+                        id="example-date-input1"
+                      />
+                    </div>
+                    <div class="col-sm-2 col-lg-2 text-center my-auto">to</div>
+                    <div class="col-sm-5 col-md-3 col-lg-5">
+                      <input
+                        class="form-control"
+                        type="date"
+                        id="example-date-input2"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label"
+                    >Reason</label
+                  >
+                  <textarea
+                    class="form-control"
+                    id="exampleFormControlTextarea1"
+                    rows="3"
+                  ></textarea>
+                </div>
+                <br />
+                <button type="submit" class="btn btn-red center-btn" onclick="CheckValidityRequestForm()">Set Changes</button>
+              </form>
+            </div>
+          </div>
+  </body>
+</html>
