@@ -1,0 +1,99 @@
+@charset "ISO-8859-1";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Pirata+One|Rubik:900');
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+	margin : 0px;
+}
+
+.nav-ul {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 5rem;
+  overflow: hidden;
+  background-color: #333;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.nav-li {
+  float: left;
+}
+
+.nav-li .nav-a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.active{
+  border-style: solid;
+  border-color: #fff;
+  border-width: 0 0 2px 0;
+  background-color: #e00;
+}
+
+.active:hover{
+  transform: translateX(-1px);
+}
+
+.nav-li .nav-a:hover {
+  background-color: #e00;
+}
+
+.title{
+	text-align: center;
+  padding: 3rem;
+}
+
+.main{
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+
+.btn-red {
+  background-color: #e00 !important; 
+  color: #fff !important;
+}
+
+.card-pad {
+  padding: 2.5rem;
+}
+
+.black-back{
+  background-color: #333;
+}
+
+.threeD {
+  text-transform: uppercase;
+  font-family: 'Rubik', sans-serif;
+  font-size: 3rem;
+	z-index: -2;
+  text-shadow: 10px 10px 10px rgba(0,0,0,.5), 20px 20px 20px rgba(0,0,0,.4), 30px 30px 30px rgba(0,0,0,.1);
+  /* mix-blend-mode: multiply; */
+  color: #e00;
+}
+
+.text-red {
+  color: #e00;
+}
+
+.card-shadow{
+  box-shadow: 10px 10px 10px rgba(0,0,0,.5), 20px 20px 20px rgba(0,0,0,.4), 30px 30px 30px rgba(0,0,0,.1);
+}
+
+.center-btn{
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.row-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
