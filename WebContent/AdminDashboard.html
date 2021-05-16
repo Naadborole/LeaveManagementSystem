@@ -49,53 +49,69 @@
               <br />
               <form class="needs-validation">
                 <div class="mb-3 form-outline">
-                  <label for="Email1" class="form-label">Email address</label>
+                  <div class="form-group row">
+                    <label for="Maternity" class="col-sm-4 col-form-label">Maternity Leave</label>
+                    <div class="col-sm-8">
+                      <input type="number" class="form-control" id="Maternity" />
+                    </div>
+                  </div>
+                  <!--<label for="Maternity" class="form-label">Maternity Leave</label>
                   <input
-                    type="email"
+                    type="number"
                     class="form-control"
-                    id="Email1"
-                    aria-describedby="emailHelp"
-                  />
-                  <div class="valid-feedback" id="valid-for-Email1">Looks good!</div>
-                  <div class="invalid-feedback" id="invalid-for-Email1">Please choose an upcoming date.</div>
+                    id="Maternity"
+                  />-->
                 </div>
                 <div class="mb-3">
-                  <label for="Subject1" class="form-label">Subject</label>
-                  <input type="text" class="form-control" id="Subject1" />
-                  <div class="valid-feedback" id="valid-for-Subject1">Looks good!</div>
-                  <div class="invalid-feedback" id="invalid-for-Subject1">Please choose an upcoming date.</div>
+                  <div class="form-group row">
+                    <label for="Medical" class="col-sm-4 col-form-label">Medical Leave</label>
+                    <div class="col-sm-8">
+                      <input type="number" class="form-control" id="Medical" />
+                    </div>
+                  </div>
+                  <!--<label for="Medical" class="form-label">Medical Leave</label>
+                  <input type="number" class="form-control" id="Medical" />-->
                 </div>
                 <div class="mb-3">
-                  <label for="example-date-input" class="col-2 col-form-label"
-                    >Date</label
-                  >
-                  <div class="row">
-                    <div class="col-sm-5 col-md-3 col-lg-5">
+                  <div class="form-group row">
+                    <label for="Personal" class="col-sm-4 col-form-label">Personal Leave</label>
+                    <div class="col-sm-8">
+                      <input type="number" class="form-control" id="Personal" />
+                    </div>
+                  </div>
+                  <!--<label for="Personal" class="form-label">Personal Leave</label>
+                  <input type="number" class="form-control" id="Personal" /> -->
+                </div>
+                <div class="mb-3">
+                  <div class="form-group row">
+                    <label for="Other" class="col-sm-4 col-form-label">Other Leave</label>
+                    <div class="col-sm-8">
+                      <input type="number" class="form-control" id="Other" />
+                    </div>
+                  </div>
+                  <!-- <label for="Other" class="form-label">Other Leave</label>
+                  <input type="number" class="form-control" id="Other" /> -->
+                </div>
+                <br/>
+                <div class="mb-3">
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="NewCategory">Add new Category</label>
                       <input
                         class="form-control"
-                        type="date"
-                        id="example-date-input1"
+                        type="text"
+                        id="NewCategory"
                       />
                     </div>
-                    <div class="col-sm-2 col-lg-2 text-center my-auto">to</div>
-                    <div class="col-sm-5 col-md-3 col-lg-5">
+                    <div class="form-group col-md-6">
+                      <label for="NewCategoryLeave">New Category Leave</label> 
                       <input
                         class="form-control"
-                        type="date"
-                        id="example-date-input2"
+                        type="number"
+                        id="NewCategoryLeave"
                       />
                     </div>
                   </div>
-                </div>
-                <div class="mb-3">
-                  <label for="exampleFormControlTextarea1" class="form-label"
-                    >Reason</label
-                  >
-                  <textarea
-                    class="form-control"
-                    id="exampleFormControlTextarea1"
-                    rows="3"
-                  ></textarea>
                 </div>
                 <br />
                 <button type="submit" class="btn btn-red center-btn" onclick="CheckValidityRequestForm()">Set Changes</button>
