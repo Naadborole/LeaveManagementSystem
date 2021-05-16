@@ -20,6 +20,15 @@
   });
 })();
 
+window.onload = function () {
+    document.getElementById("subtn").addEventListener("click", function(event){
+        if(!CheckValidityRequestForm()){
+            event.preventDefault();
+            event.stopPropagation();
+        }
+    })
+};
+
 function checkValidityLogin(em, pas) {
   let email = document.getElementById(em);
   let isEmailValid = false;
@@ -100,10 +109,29 @@ function CheckValidityRequestForm() {
   em.removeClass("is-invalid");
   em.removeClass("is-valid");
   let isemvalid = true;
+  let issubjectvalid = true;
   if (em.val() === "") {
     isemvalid = false;
     em.addClass("is-invalid");
     $("#invalid-for-Email1").html("Email cannot be empty!");
   }
-  return isemvalid;
+  else if(!em.val().includes("@")){
+    isemvalid = false;
+    em.addClass("is-invalid");
+    $("#invalid-for-Email1").html("Email must contain @!");
+  }
+  else{
+    em.addClass("is-valid");
+  }
+  sub = $("#Subject1");
+  sub.removeClass("is-invalid");
+  sub.removeClass("is-valid");
+  if (sub.val() === "") {
+    issubjectvalid = false;
+    sub.addClass("is-invalid");
+    $("#invalid-for-Subject1").html("Subject cannot be empty!");
+  }
+  
+
+  return isemvalid && issubjectvalid;
 }
