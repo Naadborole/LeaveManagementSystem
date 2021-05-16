@@ -45,6 +45,7 @@ body {
 
 .nav-li .nav-a:hover {
   background-color: #e00;
+  transform: translateX(-1px);
 }
 
 .title{

@@ -16,7 +16,7 @@ const Applist = [
     Name: "Naad Borole",
     From: "naad.borole2000@gmail.com",
     To: "hod@firstyear.com",
-    Status: "Approved",
+    Status: "Rejected",
     DateFrom: "2020-06-14",
     DateTo: "2020-06-17",
     Subject: "Requesting leave for personal reasons",
@@ -53,7 +53,7 @@ function updateUIList(Applist, indexstart){
           $("#Status"+entrynum).addClass("text-info");
         } break;
         case "Rejected":{
-          $("#Status"+entrynum).removeClass("text-danger");
+          $("#Status"+entrynum).addClass("text-danger");
         } break;
       }
       entrynum++;
