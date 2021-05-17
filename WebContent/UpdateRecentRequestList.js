@@ -110,7 +110,7 @@ function next(){
   currstartind += 3;
   currstartind = Math.min(Applist.length-1, currstartind);
   updateUIList(Applist, currstartind);
-  if(currstartind == Applist.length){
+  if(currstartind == Applist.length-1){
     $("#next").attr("disabled", true);
   }
   else{
