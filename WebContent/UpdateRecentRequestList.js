@@ -104,6 +104,9 @@ function prev(){
   else{
     $("#prev").attr("disabled", false);
   }
+  if(currstartind < Applist.length){
+    $("#next").attr("disabled", false);
+  }
 }
 
 function next(){
