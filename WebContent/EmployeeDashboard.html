@@ -13,7 +13,6 @@
       crossorigin="anonymous"
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="validation.js"></script>
   </head>
 
   <body>
@@ -21,12 +20,25 @@
       <li class="nav-li"><a class="nav-a" href="home.html">Home</a></li>
       <li class="nav-li active"><a class="nav-a" href="#home">Dashboard</a></li>
     </ul>
-    <div class="row main row-flex">
-        <div class = "col-md-8">
-            <div class="card">
+    <div class="row main row-flex" style = "margin-top: 3em;">
+        <div class = "col-8" >
+            <div class="card" >
+                <table class = "table" id="majortab" >
+                    <thead class = "text-white" style="background-color: #e00;">
+                        <tr>
+                            <th class="text-center">Type</th>
+                            <th class="text-center">Days Allocated</th>
+                            <th class="text-center">Days Used</th>
+                            <th class="text-center">Days Remaining</th>
+                        </tr>
+                    </thead>
+                    <tbody id="inr">
 
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
   </body>
+  <script src="DaysUsedUpdate.js"></script>
 </html>
